@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: gray;
+  position: relative;
+}
+
+.req{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+.req h6{
+  width: 25%;
+}
+
+
+.request{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.459);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  animation: request-anim 0.5s  1 ;
+  gap: 10px;
+  position: fixed;
+  
+}
+
+@keyframes request-anim {
+  0%{
+    transform: scale(0);
+  }100%{
+    transform: scale(1);
+  }
+}
+
+.ctrl{
+  display: flex;
+  gap: 15px;
+}
+
+.cont{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+}
+
+.board{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.cell{
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+
+.x-class{
+  background-color: crimson !important;
+  color: #ececec;
+}
+
+.o-class{
+  background-color: rgb(76, 76, 233) !important;
+  color: #ececec;
+}
