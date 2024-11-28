@@ -13,7 +13,7 @@ export default function Home() {
   const [flg , setflg] = useState(1);
   const [waiting, setwaiting] = useState(true);
   const [G, setG] = useState<string[]>([]);
-  const socket = useRef(io("ws://localhost:8900"))
+  const socket = useRef(io("https://well-infrequent-replace.glitch.me"))
   const [randomid , setrand] = useState("");
   const [allusers , setallusers] = useState<string[]>([]);
   const [friendi, setfriend] = useState("");
