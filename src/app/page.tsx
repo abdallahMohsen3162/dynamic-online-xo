@@ -5,7 +5,7 @@ import { Socket, io } from "socket.io-client";
 
 interface Accepted_data { from: string, to: string, board: number }
 // const socketUrl = "ws://localhost:8900";
-const socketUrl = "https://well-infrequent-replace.glitch.me";
+const socketUrl = "https://xo-socket.onrender.com";
 let grid = new Array<string>();
 export default function Home() {
   let sz = 3;
