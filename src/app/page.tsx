@@ -355,7 +355,9 @@ export default function Home() {
                   return(
                     <div className="cont container-fluid " key={`user-${el}-${i}`}>
                         <div className="req">
-                          <h6>{el} (user)</h6>
+                          <h6>{el}
+                            {el == randomid ? " (You)" : "(User)"}
+                          </h6>
                           <button 
                             className="btn btn-dark" 
                             onClick={() => seder(el)}
