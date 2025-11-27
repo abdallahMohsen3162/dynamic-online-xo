@@ -359,9 +359,10 @@ export default function Home() {
                             {el == randomid ? " (You)" : "(User)"}
                           </h6>
                           <button 
+
                             className="btn btn-dark" 
                             onClick={() => seder(el)}
-                            disabled={!isConnected}
+                            disabled={!isConnected || el == randomid}
                           >
                             Request
                           </button>
